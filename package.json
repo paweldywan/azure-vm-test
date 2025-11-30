@@ -1,0 +1,14 @@
+{
+  "name": "azure-vm-test",
+  "version": "1.0.0",
+  "description": "Simple console app to test Azure VM connectivity",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "get-ip": "az vm show -d -g MyResourceGroup -n MyVM --query publicIps -o tsv"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "ssh2": "^1.15.0"
+  }
+}
